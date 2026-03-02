@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Chess Store - My Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Royal Chess Store</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html" class="active">My Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="page-container">
+        <h2>Shopping Cart</h2>
+        <div class="cart-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+
+                </tbody>
+            </table>
+
+            <div class="cart-summary">
+                <h3>Total Amount: ₹<span id="cart-total">0.00</span></h3>
+                <div class="cart-actions">
+                    <button class="btn" onclick="clearCart()">Clear Cart</button>
+                    <button class="btn btn-primary"
+                        onclick="alert('Proceeding to checkout is not required for this project.')">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer footer-fixed">
+        <p>&copy; 2026 Royal Chess Store. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>

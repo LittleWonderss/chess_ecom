@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Chess Store - Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Royal Chess Store</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cart.html">My Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Premium Chess Collection</h1>
+            <p>Discover the finest chess sets for every level of play. Elevate your game with Royal Chess Store.</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+    </header>
+
+
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Wooden Chess Set" style="width:100%; height:100%; object-fit:cover; border-radius:4px;">
+                </div>
+                <h3>Wooden Chess Set</h3>
+                <p class="price">₹3600.00</p>
+                <button class="btn btn-primary" onclick="addToCart(1, 'Wooden Chess Set', 3600.00)">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Magnetic Travel Chess"
+                        style="width:100%; height:100%; object-fit:cover; border-radius:4px;">
+                </div>
+                <h3>Magnetic Travel Chess</h3>
+                <p class="price">₹2000.00</p>
+                <button class="btn btn-primary" onclick="addToCart(2, 'Magnetic Travel Chess', 2000.00)">Add to
+                    Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1560174038-da43ac74f01b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Marble Chess Board" style="width:100%; height:100%; object-fit:cover; border-radius:4px;">
+                </div>
+                <h3>Marble Chess Board</h3>
+                <p class="price">₹9600.00</p>
+                <button class="btn btn-primary" onclick="addToCart(3, 'Marble Chess Board', 9600.00)">Add to
+                    Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1669358911321-fa9504beccc7?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="marble chess set" style="width:100%; height:100%; object-fit:cover; border-radius:4px;">
+                </div>
+                <h3>marble chess set</h3>
+                <p class="price">₹2800.00</p>
+                <button class="btn btn-primary" onclick="addToCart(4, 'marble Chess set', 2800.00)">Add to
+                    Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Professional Tournament Set"
+                        style="width:100%; height:100%; object-fit:cover; border-radius:4px;">
+                </div>
+                <h3>Professional Tournament Set</h3>
+                <p class="price">₹5200.00</p>
+                <button class="btn btn-primary" onclick="addToCart(5, 'Professional Tournament Set', 5200.00)">Add to
+                    Cart</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1711672761265-7fd31daaee92?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fG1hcmJsZSUyMGNoZXNzJTIwc2V0fGVufDB8fDB8fHww"
+                        alt="Luxury Glass Chess Set"
+                        style="width:100%; height:100%; object-fit:cover; border-radius:4px;">
+                </div>
+                <h3>Luxury Glass Chess Set</h3>
+                <p class="price">₹6800.00</p>
+                <button class="btn btn-primary" onclick="addToCart(6, 'Luxury Glass Chess Set', 6800.00)">Add to
+                    Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>&copy; 2026 Royal Chess Store. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
